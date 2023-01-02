@@ -7,10 +7,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
-    --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
-    --gray-2: #363636;
+    --dark-bg: #484554;
+    --gray-1: #faf8ff;
+    --deep-dark: #5859c6;
+    --gray-2: #334b49;
     --white : white;
     --black: black;
   }
@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
       background-color: var(--dark-bg);
     }
     .scrollbar-track.scrollbar-track-y {
+      z-index: 101;
       background: var(--deep-dark);
       .scrollbar-thumb-y {
         background: var(--gray-1);

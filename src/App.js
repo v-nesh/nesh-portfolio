@@ -5,18 +5,23 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import SmoothScrollBar from "./components/SmoothScrollBar";
 
 function App() {
   return (
     <>
       <Router>
         <NavMenu />
-        <Routes>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/project" element={<Project />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
+        <SmoothScrollBar>
+          <Routes>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/project" element={<Project />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+          <Footer />
+        </SmoothScrollBar>
       </Router>
     </>
   );

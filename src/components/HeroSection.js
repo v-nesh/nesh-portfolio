@@ -167,27 +167,47 @@ export default function HeroSection() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a href="/#" target="_blank" rel="noreffer">
+                  <a
+                    href="https://github.com/v-nesh"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     GIT
                   </a>
                 </li>
                 <li>
-                  <a href="/#" target="_blank" rel="noreffer">
+                  <a
+                    href="https://linkedin.com/in/nesh-baskaran"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     LI
                   </a>
                 </li>
                 <li>
-                  <a href="/#" target="_blank" rel="noreffer">
+                  <a
+                    href="https://twitter.com/neshkaran_"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     TW
                   </a>
                 </li>
                 <li>
-                  <a href="/#" target="_blank" rel="noreffer">
+                  <a
+                    href="https://www.facebook.com/nesh.baskaran"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     FB
                   </a>
                 </li>
                 <li>
-                  <a href="/#" target="_blank" rel="noreffer">
+                  <a
+                    href="https://www.instagram.com/ig_nesh/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     IG
                   </a>
                 </li>
