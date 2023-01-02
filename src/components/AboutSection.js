@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import PText from "./PText";
 import SectionTitle from "./SectionTitle";
-import AboutImg from "../assets/images/about-sec-img.png";
+import AboutImg from "../assets/images/about_img_2.png";
 import styled from "styled-components";
 
 const AboutSectionStyle = styled.div`

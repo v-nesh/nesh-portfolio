@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/images/hero.png";
+import HeroImg from "../assets/images/hero_img.png";
 import Button from "./Button";
 import PText from "./PText";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
@@ -7,6 +7,7 @@ import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 import styled from "styled-components";
 
 const HeroStyles = styled.div`
+  padding: 2rem 0;
   .hero {
     height: 100vh;
     min-height: 1000px;
@@ -19,7 +20,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: 0rem;
     position: relative;
     span {
       display: inline-block;
@@ -39,7 +40,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: 3rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -98,7 +99,7 @@ const HeroStyles = styled.div`
     }
     .hero__heading {
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      margin-bottom: 1rem;
       .hero__name {
         font-size: 4.5rem;
       }

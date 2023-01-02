@@ -47,7 +47,7 @@ export default function ProjectItem({
         <img src={img} alt="shoecard" />
       </Link>
       <div className="projectItem__info">
-        <Link to="/projects">
+        <Link to="/project">
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>

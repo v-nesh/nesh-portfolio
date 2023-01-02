@@ -3,6 +3,7 @@ import Invoice from "../images/invoice.png";
 import ShoeCard from "../images/shoeCard.png";
 import Bmi from "../images/bmi.png";
 import StopWatch from "../images/stopwatch.png";
+import PortFolio from "../images/portfolio.png";
 
 const projects = [
   {
@@ -19,15 +20,21 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: "BMI Calculator",
-    desc: "This calculator provides BMI and the corresponding weight category. Use this calculator for adults, 20 years old and older.",
-    img: Bmi,
+    name: "Portfolio",
+    desc: "My Porfolio...",
+    img: PortFolio,
   },
   {
     id: uuidv4(),
     name: "StopWatch using React",
     desc: "Simple StopWatch app",
     img: StopWatch,
+  },
+  {
+    id: uuidv4(),
+    name: "BMI Calculator",
+    desc: "This calculator provides BMI and the corresponding weight category. Use this calculator for adults, 20 years old and older.",
+    img: Bmi,
   },
 ];
 
