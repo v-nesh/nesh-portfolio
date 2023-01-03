@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/v-nesh/nesh-portfolio/static/css/main.137303be.css",
+    "main.js": "/v-nesh/nesh-portfolio/static/js/main.571ac1cb.js",
+    "static/media/about_img_2.png": "/v-nesh/nesh-portfolio/static/media/about_img_2.0f40d945d5202eec8c9e.png",
+    "static/media/shoeCard.png": "/v-nesh/nesh-portfolio/static/media/shoeCard.38d39d57a87b2f168340.png",
+    "static/media/Montserrat-Bold.ttf": "/v-nesh/nesh-portfolio/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/v-nesh/nesh-portfolio/static/media/Montserrat-SemiBold.fa8441f345d83a0bc4ec.ttf",
+    "static/media/mymap.png": "/v-nesh/nesh-portfolio/static/media/mymap.7c19c622e26ae1c677c1.png",
+    "static/media/portfolio.png": "/v-nesh/nesh-portfolio/static/media/portfolio.876ecc63842127f0bd2b.png",
+    "static/media/hero_img.png": "/v-nesh/nesh-portfolio/static/media/hero_img.2402b89cbb3147d2e10a.png",
+    "static/media/RobotoMono-Regular.ttf": "/v-nesh/nesh-portfolio/static/media/RobotoMono-Regular.418a8f9f65ccad0918af.ttf",
+    "static/media/stopwatch.png": "/v-nesh/nesh-portfolio/static/media/stopwatch.0743dd9e3cb45b7ceb6a.png",
+    "static/media/invoice.png": "/v-nesh/nesh-portfolio/static/media/invoice.af817ba59caa0cb00664.png",
+    "static/media/bmi.png": "/v-nesh/nesh-portfolio/static/media/bmi.6e8555a6cbe12d8fb730.png",
+    "index.html": "/v-nesh/nesh-portfolio/index.html",
+    "static/media/scroll-down-arrow.svg": "/v-nesh/nesh-portfolio/static/media/scroll-down-arrow.8ad25c53cf6a683760324d08f36d9b00.svg",
+    "static/media/social-media-arrow.svg": "/v-nesh/nesh-portfolio/static/media/social-media-arrow.ecc0133cf2e7911d4b7286c107f982ec.svg",
+    "main.137303be.css.map": "/v-nesh/nesh-portfolio/static/css/main.137303be.css.map",
+    "main.571ac1cb.js.map": "/v-nesh/nesh-portfolio/static/js/main.571ac1cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.137303be.css",
+    "static/js/main.571ac1cb.js"
+  ]
+}
