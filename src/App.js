@@ -11,7 +11,7 @@ import SmoothScrollBar from "./components/SmoothScrollBar";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/nesh-portfolio">
         <NavMenu />
         <SmoothScrollBar>
           <Routes>
