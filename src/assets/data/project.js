@@ -4,6 +4,7 @@ import ShoeCard from "../images/shoeCard.png";
 import Bmi from "../images/bmi.png";
 import StopWatch from "../images/stopwatch.png";
 import PortFolio from "../images/portfolio.png";
+import Calculator from "../images/calculator.png";
 
 const projects = [
   {
@@ -26,8 +27,8 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: "StopWatch using React",
-    desc: "Simple StopWatch app",
+    name: "StopWatch",
+    desc: "StopWatch app using reactjs",
     img: StopWatch,
   },
   {
@@ -35,6 +36,12 @@ const projects = [
     name: "BMI Calculator",
     desc: "This calculator provides BMI and the corresponding weight category. Use this calculator for adults, 20 years old and older.",
     img: Bmi,
+  },
+  {
+    id: uuidv4(),
+    name: "Calculator",
+    desc: "Simple Calculator using HTML, Css and Javscript with the forEach method",
+    img: Calculator,
   },
 ];
 
