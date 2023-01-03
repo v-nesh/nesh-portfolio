@@ -134,7 +134,7 @@ const HeroStyles = styled.div`
         }
       }
     }
-    /.hero__scrollDown {
+    .hero__scrollDown {
       display: none;
     }
   }
