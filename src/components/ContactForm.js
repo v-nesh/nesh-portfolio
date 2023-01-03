@@ -44,9 +44,13 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const onSub = (e) => {
+    e.prenventDefault();
+  };
+
   return (
-    <FormStyles>
-      <form action="" onSubmit="">
+    <div>
+      <FormStyles onSubmit={onSub}>
         <div className="form-group">
           <label htmlFor="from_name">
             Your Name
@@ -84,7 +88,7 @@ export default function ContactForm() {
           </label>
         </div>
         <button type="submit">Send</button>
-      </form>
-    </FormStyles>
+      </FormStyles>
+    </div>
   );
 }

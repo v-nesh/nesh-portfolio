@@ -6,22 +6,21 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import SmoothScrollBar from "./components/SmoothScrollBar";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
-      <Router basename="/nesh-portfolio">
+      <Router>
         <NavMenu />
-        <SmoothScrollBar>
-          <Routes>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/project" element={<Project />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/" element={<Home />}></Route>
-          </Routes>
-          <Footer />
-        </SmoothScrollBar>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/project" element={<Project />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+        <Footer />
       </Router>
     </>
   );
