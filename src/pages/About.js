@@ -115,17 +115,15 @@ export default function About() {
               title="Frontend"
               items={["ReactJs", "HTML", "Css", "Javascript", "Bootstrap"]}
             />
-            <Aboutinfoitem
-              title="Backend"
-              items={["C#", "MySQL", "PHP", "NodeJs"]}
-            />
+            <Aboutinfoitem title="Backend" items={["C#", "PHP", "NodeJs"]} />
+            <Aboutinfoitem title="Database" items={["MySQL", "MySQL server"]} />
             <Aboutinfoitem
               title="Design"
               items={["After Effects", "PhotoShop", "Illustrator"]}
             />
             <Aboutinfoitem
               title="Others"
-              items={["MS word", "Ms Excel", "spreadsheet"]}
+              items={["MS Word", "Ms Excel", "Spreadsheet"]}
             />
           </div>
         </div>
