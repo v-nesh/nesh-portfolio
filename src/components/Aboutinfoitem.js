@@ -29,10 +29,21 @@ const AboutItemStyles = styled.div`
     gap: 1rem;
     .items {
       position: initial;
-      gap: 0.4rem;
+      gap: 0.2rem;
     }
     .title {
       font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .items {
+      position: initial;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .item2 {
+      min-width: 25rem;
     }
   }
 `;
@@ -46,7 +57,7 @@ export default function Aboutinfoitem({
       <div className="title">{title}</div>
       <div className="items">
         {items.map((item, index) => (
-          <div className="item" key={index}>
+          <div className="item item2" key={index}>
             <PText>{item}</PText>
           </div>
         ))}

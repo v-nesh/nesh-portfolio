@@ -88,7 +88,10 @@ export default function About() {
                 <br />
               </PText>
             </div>
-            <Button btnText="Download Resume" btnLink="#"></Button>
+            <Button
+              btnText="Download Resume"
+              btnLink="https://drive.google.com/uc?export=download&id=1J3q7UCn2oqOYiJzBxOhEdU8rNyK7oV-W"
+            ></Button>
           </div>
         </div>
         <div className="about__info__items">
@@ -113,18 +116,28 @@ export default function About() {
             <h1 className="about__info__heading">Skills</h1>
             <Aboutinfoitem
               title="Frontend"
-              items={["ReactJs", "HTML", "Css", "Javascript", "Bootstrap"]}
+              items={[
+                "ReactJs",
+                "HTML",
+                "Css",
+                "Javascript",
+                "Bootstrap",
+                "Sass",
+              ]}
             />
-            <Aboutinfoitem title="Backend" items={["C#", "PHP", "NodeJs"]} />
-            <Aboutinfoitem title="Database" items={["MySQL", "MySQL server"]} />
+            {/* <Aboutinfoitem title="Backend" items={["C#", "PHP", "NodeJs"]} /> */}
+            <Aboutinfoitem
+              title="Database"
+              items={["MySQL", "MySQL server", "Firebase"]}
+            />
             <Aboutinfoitem
               title="Design"
               items={["After Effects", "PhotoShop", "Illustrator"]}
             />
-            <Aboutinfoitem
+            {/* <Aboutinfoitem
               title="Others"
               items={["MS Word", "Ms Excel", "Spreadsheet"]}
-            />
+            /> */}
           </div>
         </div>
       </div>
