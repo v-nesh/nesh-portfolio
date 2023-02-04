@@ -1,9 +1,10 @@
 import React from "react";
 import PText from "../components/PText";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import styled from "styled-components";
 import Aboutinfoitem from "../components/Aboutinfoitem";
 import ContactBanner from "../components/ContactBanner";
+import ButtonExternal from "./../components/ButtonExternal";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0;
@@ -88,10 +89,10 @@ export default function About() {
                 <br />
               </PText>
             </div>
-            <Button
+            <ButtonExternal
               btnText="Download Resume"
               btnLink="https://drive.google.com/uc?export=download&id=1J3q7UCn2oqOYiJzBxOhEdU8rNyK7oV-W"
-            ></Button>
+            ></ButtonExternal>
           </div>
         </div>
         <div className="about__info__items">

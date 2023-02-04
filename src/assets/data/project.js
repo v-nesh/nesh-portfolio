@@ -9,7 +9,7 @@ import PortFolio from "../images/portfolio.png";
 const projects = [
   {
     id: uuidv4(),
-    name: "ShopZilla - e-commerce website",
+    name: "ShopZilla E-commerce website",
     desc: "The objective of this project is to develop a general purpose e-commerce store where any kind of product can be bought from the comfort of home through the internet",
     img: shopZilla,
   },
