@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
 import { MdSearch } from "react-icons/md";
-import ProjectItem from "../components/ProjectItem";
+// import ProjectItem from "../components/ProjectItem";
 import ProjectInfo from "../assets/data/project";
+import ProjectItemExternal from "./../components/ProjectItemExternal";
 
 const ProjectStyles = styled.div`
   padding: 10rem 0;
@@ -85,11 +86,12 @@ export default function Project() {
         </div>
         <div className="projects__allItems">
           {projectData.map((item) => (
-            <ProjectItem
+            <ProjectItemExternal
               key={item.id}
               title={item.name}
               desc={item.desc}
               img={item.img}
+              link={item.link}
             />
           ))}
         </div>

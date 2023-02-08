@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import shoeCard from "../assets/images/shoeCard.png";
 
@@ -36,20 +35,23 @@ const ProjectItemStyle = styled.div`
   }
 `;
 
-export default function ProjectItem({
+export default function ProjectItemExternal({
   img = shoeCard,
   title = "projectName",
   desc = "Project description",
+  link = "/",
 }) {
   return (
     <ProjectItemStyle>
       <div className="projectItem__img">
-        <img src={img} alt="shoecard" />
+        <a href={link} target="_blank" rel="noreferrer">
+          <img src={img} alt="shoecard" />
+        </a>
       </div>
       <div className="projectItem__info">
-        <Link to="/project">
+        <a href={link} target="_blank" rel="noreferrer">
           <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        </a>
         <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyle>

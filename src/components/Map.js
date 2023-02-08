@@ -27,6 +27,7 @@ const MapStyles = styled.div`
   .map {
     position: relative;
     min-height: 250px;
+    border-radius: 5px;
     width: 100%;
   }
 
@@ -40,11 +41,6 @@ const MapStyles = styled.div`
       align-items: center;
       width: 100%;
     }
-    .map {
-      position: relative;
-      min-height: 240px;
-      min-width: 30%;
-    }
     @media only screen and (max-width: 400px) {
       .map__card {
         top: 10%;
@@ -52,10 +48,6 @@ const MapStyles = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-      }
-      .map {
-        min-height: 240px;
         width: 100%;
       }
     }

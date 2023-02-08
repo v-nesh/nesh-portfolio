@@ -141,7 +141,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2023 - Vignesh | Design with &lt;3</PText>
+          <PText>&copy; 2023 - Vignesh | Design with &lt;3</PText>
         </div>
       </div>
     </FooterStyles>
