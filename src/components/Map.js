@@ -9,9 +9,10 @@ const MapStyles = styled.div`
   .container {
     position: relative;
     min-height: 300px;
+    width: 100%;
   }
   .map__card {
-    position: absolute;
+    position: relative;
     top: 10%;
     bottom: 5%;
     padding: 2rem;
@@ -24,14 +25,14 @@ const MapStyles = styled.div`
   }
 
   .map {
+    position: relative;
     min-height: 250px;
-    min-width: 1180px;
+    width: 100%;
   }
 
   @media only screen and (max-width: 768px) {
     background-position: 80% center;
     .map__card {
-      position: absolute;
       top: 10%;
       bottom: 5%;
       display: flex;
@@ -40,13 +41,12 @@ const MapStyles = styled.div`
       width: 100%;
     }
     .map {
-      position: absolute;
+      position: relative;
       min-height: 240px;
-      min-width: 630px;
+      min-width: 30%;
     }
     @media only screen and (max-width: 400px) {
       .map__card {
-        position: absolute;
         top: 10%;
         bottom: 5%;
         display: flex;
@@ -55,9 +55,8 @@ const MapStyles = styled.div`
         width: 100%;
       }
       .map {
-        position: absolute;
         min-height: 240px;
-        min-width: 330px;
+        width: 100%;
       }
     }
   }
