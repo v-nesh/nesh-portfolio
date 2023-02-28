@@ -96,17 +96,16 @@ export default function Footer() {
             heading="Contact info"
             links={[
               {
-                title: "+91-8072626516",
-                path: "tel:8072626516",
+                title: "+91-8072XXXX16",
+                path: "tel:8072XXXX16",
               },
               {
                 title: "nesh.baskaran@gmail.com",
                 path: "mailto:nesh.baskaran@gmail.com",
               },
               {
-                title:
-                  "7/20 Balaji nagar,2nd Street,M.C Road, Thanjavur, TamilNadu, India",
-                path: "https://goo.gl/maps/ZDy9bcDBkNhibeSq5",
+                title: "Thanjavur",
+                path: "https://goo.gl/maps/xRgD4t5fe6xG9jYo9",
               },
             ]}
           />
@@ -125,15 +124,15 @@ export default function Footer() {
               },
               {
                 title: "twitter",
-                path: "https://twitter.com/neshkaran_",
+                path: "https://twitter.com/",
               },
               {
                 title: "Facebook",
-                path: "https://www.facebook.com/nesh.baskaran",
+                path: "https://www.facebook.com/",
               },
               {
                 title: "Instagram",
-                path: "https://www.instagram.com/ig_nesh/",
+                path: "https://www.instagram.com/",
               },
             ]}
           />
@@ -141,7 +140,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>&copy; 2023 - Vignesh | Design with &lt;3</PText>
+          <PText>Design with &lt;3</PText>
         </div>
       </div>
     </FooterStyles>

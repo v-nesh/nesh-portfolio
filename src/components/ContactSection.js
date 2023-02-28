@@ -56,12 +56,17 @@ export default function ContactSection() {
         <SectionTitle heading="Contact" subHeading="Get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+91-8072626516" />
+            <ContactInfoItem
+              icon={<MdLocalPhone />}
+              text="+91-8072XXXX16"
+              path="tel:8072XXXX16"
+            />
             <ContactInfoItem
               icon={<MdEmail />}
               text="nesh.baskaran@gmail.com"
+              path="mailto:nesh.baskaran@gmail.com"
             />
-            <ContactInfoItem text="Thanjavur,TamilNadu" />
+            <ContactInfoItem text="Thanjavur,TamilNadu" path='https://goo.gl/maps/xRgD4t5fe6xG9jYo9' />
           </div>
           <div className="right">
             <ContactForm />

@@ -104,11 +104,7 @@ export default function About() {
             />
             <Aboutinfoitem
               title="College"
-              items={["Prist University, Thanjavur"]}
-            />
-            <Aboutinfoitem
-              title="Varsity"
-              items={["Bharathidasan university"]}
+              items={["PRIST University, Thanjavur"]}
             />
           </div>
         </div>

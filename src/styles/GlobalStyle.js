@@ -6,11 +6,18 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+  ::selection{
+    background-color: #da7b93;
+    color: #2a1b3d;
+  }
   :root{
-    --dark-bg: #484554;
-    --gray-1: #faf8ff;
-    --deep-dark: #5859c6;
-    --gray-2: #fbeaff;
+    /* --dark-bg: #484554; */
+    --dark-bg: #2c3531;
+    --gray-1: #d1e8e2;
+    /* --deep-dark: #5859c6; */
+    --deep-dark:  #116466;
+    /* --deep-dark: #1d1d1d; */
+    --gray-2: #d9b08c;
     --white : white;
     --black: black;
   }

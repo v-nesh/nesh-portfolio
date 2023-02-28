@@ -31,6 +31,9 @@ const AboutSectionStyle = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
+  .abt_img {
+    border-radius: 2rem;
+  }
   @media only screen and (max-width: 950px) {
     .aboutSection__left {
       flex: 4;
@@ -95,7 +98,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="aboutSection__right">
-          <img src={AboutImg} alt="" />
+          <img className="abt_img" src={AboutImg} alt="abtImg" />
         </div>
       </div>
     </AboutSectionStyle>

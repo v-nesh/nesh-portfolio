@@ -37,7 +37,10 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    /* border: 2px solid var(--gray-1); */
+  }
+  .hero__img img {
+    border-radius: 2rem;
   }
   .hero__info {
     margin-top: 3rem;
@@ -111,7 +114,7 @@ const HeroStyles = styled.div`
       margin-top: 3rem;
     }
     .hero__social {
-      left: 0px;
+      left: 2px;
       bottom: 15%;
       width: 20px;
     }
@@ -128,7 +131,7 @@ const HeroStyles = styled.div`
       ul {
         li {
           a {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-bottom: 1rem;
           }
         }
@@ -169,15 +172,6 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/v-nesh"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GIT
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="https://linkedin.com/in/nesh-baskaran"
                     target="_blank"
                     rel="noreferrer"
@@ -185,9 +179,10 @@ export default function HeroSection() {
                     LI
                   </a>
                 </li>
+
                 <li>
                   <a
-                    href="https://twitter.com/neshkaran_"
+                    href="https://twitter.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -196,7 +191,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/nesh.baskaran"
+                    href="https://www.facebook.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -205,7 +200,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/ig_nesh/"
+                    href="https://www.instagram.com/"
                     target="_blank"
                     rel="noreferrer"
                   >

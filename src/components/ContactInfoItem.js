@@ -27,12 +27,15 @@ const ItemStyle = styled.div`
 export default function ContactInfoItem({
   icon = <MdPlace />,
   text = "this is info",
+  path = "/",
 }) {
   return (
     <ItemStyle>
       <div className="icon">{icon}</div>
       <div className="info">
-        <PText>{text}</PText>
+        <a href={path}>
+          <PText>{text}</PText>
+        </a>
       </div>
     </ItemStyle>
   );
