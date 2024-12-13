@@ -1,15 +1,18 @@
-import React from "react";
-import PText from "./PText";
-import styled from "styled-components";
+import React from 'react';
+import PText from './PText';
+import styled from 'styled-components';
 
 const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 3rem;
+  height: auto;
   position: relative;
   .title {
     font-size: 2.4rem;
+    line-break: auto;
+    width: 3rem;
   }
   .items {
     display: flex;
@@ -33,6 +36,7 @@ const AboutItemStyles = styled.div`
     }
     .title {
       font-size: 2rem;
+      width: 100%;
     }
   }
   @media only screen and (max-width: 500px) {
@@ -48,16 +52,13 @@ const AboutItemStyles = styled.div`
   }
 `;
 
-export default function Aboutinfoitem({
-  title = "this is title",
-  items = ["html", "css"],
-}) {
+export default function Aboutinfoitem({ title = 'this is title', items = ['html', 'css'] }) {
   return (
     <AboutItemStyles>
-      <div className="title">{title}</div>
-      <div className="items">
+      <div className='title'>{title}</div>
+      <div className='items'>
         {items.map((item, index) => (
-          <div className="item item2" key={index}>
+          <div className='item item2' key={index}>
             <PText>{item}</PText>
           </div>
         ))}

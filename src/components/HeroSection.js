@@ -1,16 +1,16 @@
-import React from "react";
-import HeroImg from "../assets/images/hero_img.png";
-import Button from "./Button";
-import PText from "./PText";
-import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
-import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
-import styled from "styled-components";
+import React from 'react';
+import HeroImg from '../assets/images/hero_img.png';
+import Button from './Button';
+import PText from './PText';
+import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
+import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import styled from 'styled-components';
 
 const HeroStyles = styled.div`
   padding: 2rem 0;
   .hero {
     height: 100vh;
-    min-height: 1000px;
+    min-height: 1100px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -27,7 +27,7 @@ const HeroStyles = styled.div`
       width: 100%;
     }
     .hero__name {
-      font-family: "Montserrat SemiBold";
+      font-family: 'Montserrat SemiBold';
       font-size: 7rem;
       color: var(--white);
     }
@@ -41,9 +41,14 @@ const HeroStyles = styled.div`
   }
   .hero__img img {
     border-radius: 2rem;
+    margin-top: 1rem;
   }
   .hero__info {
     margin-top: 3rem;
+  }
+  .hero_info_title {
+    font-size: 3rem;
+    margin-top: 2rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -146,72 +151,43 @@ const HeroStyles = styled.div`
 export default function HeroSection() {
   return (
     <HeroStyles>
-      <div className="hero">
-        <div className="container">
-          <h1 className="hero__heading">
+      <div className='hero'>
+        <div className='container'>
+          <h1 className='hero__heading'>
             <span>Hello, This is </span>
-            <span className="hero__name">Vignesh</span>
+            <span className='hero__name'>Vignesh</span>
           </h1>
-          <div className="hero__img">
-            <img src={HeroImg} alt="" />
+          <div className='hero__img'>
+            <img src={HeroImg} alt='' />
           </div>
-          <div className="hero__info">
+          <div className='hero_info_title'>
+            <h5>Turning Ideas into Stunning Digital Experiences</h5>
+          </div>
+          <div className='hero__info'>
             <PText>
-              A Frontend focused Web Developer building the frontend of Websites
-              and Web Applications that lead to the success of the overall
-              product
+              As a frontend developer, I bring designs to life with clean code, modern technologies,
+              and a passion for user-focused experiences. Whether it’s building sleek websites or
+              robust web apps, I craft solutions that engage and perform.
             </PText>
-            <Button btnLink="/project" btnText="see my projects" />
+            <Button btnLink='/project' btnText='see my projects' />
           </div>
-          <div className="hero__social">
-            <div className="hero__social__indicator">
+          <div className='hero__social'>
+            <div className='hero__social__indicator'>
               <p>follow</p>
-              <img src={SocialMediaArrow} alt="socialmediaarrow" />
+              <img src={SocialMediaArrow} alt='socialmediaarrow' />
             </div>
-            <div className="hero__social__text">
+            <div className='hero__social__text'>
               <ul>
                 <li>
-                  <a
-                    href="https://linkedin.com/in/nesh-baskaran"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href='https://linkedin.com/in/nesh-baskaran' target='_blank' rel='noreferrer'>
                     LI
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    FB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="hero__scrollDown">
+            <div className='hero__scrollDown'>
               <p>scroll</p>
-              <img src={ScrollDownArrow} alt="scrolldownarrow" />
+              <img src={ScrollDownArrow} alt='scrolldownarrow' />
             </div>
           </div>
         </div>

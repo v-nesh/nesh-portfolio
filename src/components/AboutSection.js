@@ -1,9 +1,9 @@
-import React from "react";
-import Button from "./Button";
-import PText from "./PText";
-import SectionTitle from "./SectionTitle";
-import AboutImg from "../assets/images/about_img_2.png";
-import styled from "styled-components";
+import React from 'react';
+import Button from './Button';
+import PText from './PText';
+import SectionTitle from './SectionTitle';
+import AboutImg from '../assets/images/about_img_2.png';
+import styled from 'styled-components';
 
 const AboutSectionStyle = styled.div`
   padding: 10rem 0;
@@ -76,29 +76,23 @@ const AboutSectionStyle = styled.div`
 export default function AboutSection() {
   return (
     <AboutSectionStyle>
-      <div className="container">
-        <div className="aboutSection__left">
-          <SectionTitle
-            heading="About Me"
-            subHeading="Let me introduce myself"
-          />
+      <div className='container'>
+        <div className='aboutSection__left'>
+          <SectionTitle heading='About Me' subHeading='Let me introduce myself' />
           <PText>
-            I'm a web developer with a focus on the MERN stack, but still
-            exploring other technologies and frameworks that catch my interest!
-            if you're looking for a developer to add to your team, I'd love to
-            hear from you!
+            A passionate frontend developer dedicated to crafting seamless and visually striking
+            digital experiences. With expertise in modern web technologies and an eye for design,
+            the focus is on building responsive and user-friendly websites and applications that
+            meet the highest standards. Every project is approached with a commitment to quality,
+            functionality, and performance.
           </PText>
-          <div className="aboutSection__Button">
-            <Button btnLink="/project" btnText="Works"></Button>
-            <Button
-              btnLink="/about"
-              btnText="Read More"
-              outline="true"
-            ></Button>
+          <div className='aboutSection__Button'>
+            <Button btnLink='/project' btnText='Works'></Button>
+            <Button btnLink='/about' btnText='Read More' outline='true'></Button>
           </div>
         </div>
-        <div className="aboutSection__right">
-          <img className="abt_img" src={AboutImg} alt="abtImg" />
+        <div className='aboutSection__right'>
+          <img className='abt_img' src={AboutImg} alt='abtImg' />
         </div>
       </div>
     </AboutSectionStyle>
