@@ -112,7 +112,7 @@ export default function About() {
             </div>
             <ButtonExternal
               btnText='Download Resume'
-              btnLink='https://drive.google.com/uc?export=download&id=1NrbHXzTtTp_35dFOhde-uIyFjzyZK2S0'
+              btnLink='https://drive.google.com/uc?export=download&id=1qD9UuiMMWvghcP7mmyP0zme8Zd3Yk_zw'
             ></ButtonExternal>
           </div>
         </div>

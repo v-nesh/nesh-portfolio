@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import ContactInfoItem from "./ContactInfoItem";
-import SectionTitle from "./SectionTitle";
-import { MdEmail, MdLocalPhone } from "react-icons/md";
-import ContactForm from "./ContactForm";
+import React from 'react';
+import styled from 'styled-components';
+import ContactInfoItem from './ContactInfoItem';
+import SectionTitle from './SectionTitle';
+import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import ContactForm from './ContactForm';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -16,7 +16,7 @@ const ContactSectionStyle = styled.div`
   }
   .contactSection__wrapper::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 2px;
     height: 50%;
     background-color: var(--gray-1);
@@ -52,23 +52,22 @@ const ContactSectionStyle = styled.div`
 export default function ContactSection() {
   return (
     <ContactSectionStyle>
-      <div className="container">
-        <SectionTitle heading="Contact" subHeading="Get in touch" />
-        <div className="contactSection__wrapper">
-          <div className="left">
-            <ContactInfoItem
-              icon={<MdLocalPhone />}
-              text="+91-8072626516"
-              path="tel:8072626516"
-            />
+      <div className='container'>
+        <SectionTitle heading='Contact' subHeading='Get in touch' />
+        <div className='contactSection__wrapper'>
+          <div className='left'>
+            <ContactInfoItem icon={<MdLocalPhone />} text='+91-8072626516' path='tel:8072626516' />
             <ContactInfoItem
               icon={<MdEmail />}
-              text="nesh.baskaran@gmail.com"
-              path="mailto:nesh.baskaran@gmail.com"
+              text='vignesh1.baskaran@gmail.com'
+              path='mailto:vignesh1.baskaran@gmail.com'
             />
-            <ContactInfoItem text="Thanjavur,TamilNadu" path='https://goo.gl/maps/xRgD4t5fe6xG9jYo9' />
+            <ContactInfoItem
+              text='Thanjavur,TamilNadu'
+              path='https://goo.gl/maps/xRgD4t5fe6xG9jYo9'
+            />
           </div>
-          <div className="right">
+          <div className='right'>
             <ContactForm />
           </div>
         </div>

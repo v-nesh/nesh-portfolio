@@ -100,8 +100,8 @@ export default function Footer() {
                 path: 'tel:8072626516',
               },
               {
-                title: 'nesh.baskaran@gmail.com',
-                path: 'mailto:nesh.baskaran@gmail.com',
+                title: 'vignesh1.baskaran@gmail.com',
+                path: 'mailto:vignesh1.baskaran@gmail.com',
               },
               {
                 title: 'Thanjavur',
