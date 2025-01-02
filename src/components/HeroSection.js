@@ -169,7 +169,7 @@ export default function HeroSection() {
               and a passion for user-focused experiences. Whether it’s building sleek websites or
               robust web apps, I craft solutions that engage and perform.
             </PText>
-            <Button btnLink='/project' btnText='see my projects' />
+            <Button btnLink='/project' btnText='See my projects' />
           </div>
           <div className='hero__social'>
             <div className='hero__social__indicator'>

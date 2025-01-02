@@ -62,10 +62,7 @@ export default function ContactSection() {
               text='vignesh1.baskaran@gmail.com'
               path='mailto:vignesh1.baskaran@gmail.com'
             />
-            <ContactInfoItem
-              text='Thanjavur,TamilNadu'
-              path='https://goo.gl/maps/xRgD4t5fe6xG9jYo9'
-            />
+            <ContactInfoItem text='Chennai,TamilNadu' />
           </div>
           <div className='right'>
             <ContactForm />

@@ -103,10 +103,10 @@ export default function Footer() {
                 title: 'vignesh1.baskaran@gmail.com',
                 path: 'mailto:vignesh1.baskaran@gmail.com',
               },
-              {
-                title: 'Thanjavur',
-                path: 'https://goo.gl/maps/xRgD4t5fe6xG9jYo9',
-              },
+              // {
+              //   title: 'Thanjavur',
+              //   path: 'https://goo.gl/maps/xRgD4t5fe6xG9jYo9',
+              // },
             ]}
           />
         </div>

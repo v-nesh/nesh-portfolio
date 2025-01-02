@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from 'react';
+import styled from 'styled-components';
+import emailjs from '@emailjs/browser';
 
 const FormStyles = styled.div`
   width: 100%;
@@ -27,7 +27,7 @@ const FormStyles = styled.div`
     min-height: 250px;
     resize: vertical;
   }
-  button[type="submit"] {
+  button[type='submit'] {
     background-color: var(--gray-1);
     color: var(--black);
     font-size: 2rem;
@@ -58,20 +58,20 @@ const FormStyles = styled.div`
 `;
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [showErrMessage, setShowErrMessage] = useState("");
-  const [showSuccMessage, setshowSuccMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [showErrMessage, setShowErrMessage] = useState('');
+  const [showSuccMessage, setshowSuccMessage] = useState('');
 
   const form = useRef();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowErrMessage("");
-      setshowSuccMessage("");
-    }, 10000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowErrMessage("");
+  //     setshowSuccMessage("");
+  //   }, 10000);
+  // });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -79,76 +79,70 @@ export default function ContactForm() {
     if (reg.test(name) && reg.test(email)) {
       send(e);
     } else {
-      setShowErrMessage("Name and Email should be more than 5 characters");
+      setShowErrMessage('Name and Email should be more than 5 characters');
     }
   };
 
   const send = (e) => {
-    emailjs
-      .sendForm(
-        "service_ixx1jvy",
-        "template_bano2nl",
-        form.current,
-        "9ElHRZbkDGpl00cqo"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    setEmail("");
-    setName("");
-    setMessage("");
-    setshowSuccMessage("Email send Successfully!");
+    setShowErrMessage('');
+    emailjs.sendForm('service_38e3yno', 'template_bano2nl', form.current, '9ElHRZbkDGpl00cqo').then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    setEmail('');
+    setName('');
+    setMessage('');
+    setshowSuccMessage('Email sent successfully!');
   };
 
   return (
     <>
       <FormStyles>
         <form onSubmit={sendEmail} ref={form}>
-          <div className="form-group">
-            <label htmlFor="from_name">
+          <div className='form-group'>
+            <label htmlFor='from_name'>
               Your Name
               <input
-                type="text"
-                id="name"
-                name="from_name"
+                type='text'
+                id='name'
+                name='from_name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </label>
-            <span className="err_message">{showErrMessage}</span>
+            <span className='err_message'>{showErrMessage}</span>
           </div>
-          <div className="form-group">
-            <label htmlFor="from_email">
+          <div className='form-group'>
+            <label htmlFor='from_email'>
               Your Email
               <input
-                type="text"
-                id="email"
-                name="from_email"
+                type='text'
+                id='email'
+                name='from_email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </label>
-            <span className="err_message">{showErrMessage}</span>
+            <span className='err_message'>{showErrMessage}</span>
           </div>
-          <div className="form-group">
-            <label htmlFor="message">
+          <div className='form-group'>
+            <label htmlFor='message'>
               Your Message
               <textarea
-                type="text"
-                id="email"
-                name="message"
+                type='text'
+                id='email'
+                name='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
             </label>
           </div>
-          <button type="submit">Send</button>
-          <span className="err_message success">{showSuccMessage}</span>
+          <button type='submit'>Send</button>
+          <span className='err_message success'>{showSuccMessage}</span>
         </form>
       </FormStyles>
     </>

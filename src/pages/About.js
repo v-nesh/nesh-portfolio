@@ -112,7 +112,7 @@ export default function About() {
             </div>
             <ButtonExternal
               btnText='Download Resume'
-              btnLink='https://drive.google.com/uc?export=download&id=1qD9UuiMMWvghcP7mmyP0zme8Zd3Yk_zw'
+              btnLink='https://drive.google.com/uc?export=download&id=1S7j-TvuWtoANKKgNIG5lF_0xiIKO3Wun'
             ></ButtonExternal>
           </div>
         </div>
@@ -121,7 +121,8 @@ export default function About() {
             <h1 className='about__info__heading'>Work Experience</h1>
             <div className='title'>Software Developer</div>
             <div className='sub__title'>
-              TechSwing Solutions <span className='sub__title_span'>(March 2023 - Present)</span>
+              TechSwing Solutions{' '}
+              <span className='sub__title_span'>(March 2023 - December 2024)</span>
             </div>
             <div>
               <ul>
