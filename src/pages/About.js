@@ -6,6 +6,8 @@ import Aboutinfoitem from '../components/Aboutinfoitem';
 import ContactBanner from '../components/ContactBanner';
 import ButtonExternal from './../components/ButtonExternal';
 
+const fileId = '1UwDQaq_URbNZTD_JEQfgqiRsedxsO-Yj';
+
 const AboutPageStyles = styled.div`
   padding: 20rem 0;
   .top-section {
@@ -98,21 +100,20 @@ export default function About() {
             {/* <h2 className='about__heading'>A freelance Web Developer</h2> */}
             <div className='about__info'>
               <PText>
-                A passionate web developer from Tamil Nadu, India, a place known for its natural
-                beauty and rich culture. From a young age, I’ve had a deep love for art and design,
-                always striving to approach creativity with a unique perspective. My goal is to
-                build things that are not only visually appealing but also serve a meaningful
-                purpose for others. My coding journey began in high school, and over the years, I’ve
-                come to see coding as an art form. I love the process of blending design and
-                functionality, and it excites me to bring ideas to life through clean, efficient
-                code. Every project is an opportunity to push boundaries and create seamless,
-                user-friendly web experiences.
+                I'm a passionate software developer from Tamil Nadu, India, a place known for its
+                natural beauty and rich culture. From a young age, I’ve loved art and design,
+                constantly striving to bring a unique perspective to creativity. My goal is to build
+                software that’s not just visually appealing but also meaningful and impactful. My
+                coding journey began in high school, and over the years, I’ve come to see it as an
+                art form. I love blending design with functionality and bringing ideas to life
+                through clean, efficient code. Every project is a chance to push boundaries and
+                create seamless, user friendly experiences.
                 <br />
               </PText>
             </div>
             <ButtonExternal
               btnText='Download Resume'
-              btnLink='https://drive.google.com/uc?export=download&id=1S7j-TvuWtoANKKgNIG5lF_0xiIKO3Wun'
+              btnLink={`https://drive.google.com/uc?export=download&id=${fileId}`}
             ></ButtonExternal>
           </div>
         </div>

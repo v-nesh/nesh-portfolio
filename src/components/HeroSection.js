@@ -165,8 +165,8 @@ export default function HeroSection() {
           </div>
           <div className='hero__info'>
             <PText>
-              As a frontend developer, I bring designs to life with clean code, modern technologies,
-              and a passion for user-focused experiences. Whether it’s building sleek websites or
+              As a software developer, I bring designs to life with clean code, modern technologies,
+              and a passion for user focused experiences. Whether it’s building sleek websites or
               robust web apps, I craft solutions that engage and perform.
             </PText>
             <Button btnLink='/project' btnText='See my projects' />

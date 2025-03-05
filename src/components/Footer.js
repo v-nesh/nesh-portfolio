@@ -60,8 +60,8 @@ export default function Footer() {
         <div className='footer__col1'>
           <h1 className='footer__col1__title'>Vignesh</h1>
           <PText>
-            A Frontend focused Web Developer building the frontend of Websites and Web Applications
-            that lead to the success of the overall product
+            I’m a Software Developer who builds user friendly, high-performance software. My goal is
+            to create seamless experiences that drive a product’s success.
           </PText>
         </div>
         <div className='footer__col2'>

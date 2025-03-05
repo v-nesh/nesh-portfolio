@@ -80,9 +80,9 @@ export default function AboutSection() {
         <div className='aboutSection__left'>
           <SectionTitle heading='About Me' subHeading='Let me introduce myself' />
           <PText>
-            A passionate frontend developer dedicated to crafting seamless and visually striking
+            A passionate software developer dedicated to crafting seamless and visually striking
             digital experiences. With expertise in modern web technologies and an eye for design,
-            the focus is on building responsive and user-friendly websites and applications that
+            the focus is on building responsive and userfriendly websites and applications that
             meet the highest standards. Every project is approached with a commitment to quality,
             functionality, and performance.
           </PText>
